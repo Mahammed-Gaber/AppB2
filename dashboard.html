@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Build App</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- <div class="dashboardNavbar row">
+    <form id="app-cover">
+      <div id="select-box">
+        <input type="checkbox" id="options-view-button" />
+        <div id="select-button" class="brd">
+          <div id="selected-value">
+            <span>Select Language</span>
+          </div>
+          <div id="chevrons">
+            <i class="fas fa-chevron-up"></i>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div id="options">
+          <div class="option">
+            <input class="s-c top" type="radio" name="platform" value="codepen" />
+            <input class="s-c bottom" type="radio" name="platform" value="codepen" />
+            <i><img width="20px" src="assets/img/flag/arabic.png" /></i>
+            <span class="label">Arabic</span>
+            <span class="opt-val">Arabic</span>
+          </div>
+          <div class="option">
+            <input class="s-c top" type="radio" name="platform" value="dribbble" />
+            <input class="s-c bottom" type="radio" name="platform" value="dribbble" />
+            <i><img width="20px" src="assets/img/flag/english.png" /></i>
+            <span class="label">English</span>
+            <span class="opt-val">English</span>
+          </div>
+          <div class="option">
+            <input class="s-c top" type="radio" name="platform" value="behance" />
+            <input class="s-c bottom" type="radio" name="platform" value="behance" />
+            <i><img width="20px" src="assets/img/flag/german.png" /></i>
+            <span class="label">Germany</span>
+            <span class="opt-val">Germany</span>
+          </div>
+          <div class="option">
+            <input class="s-c top" type="radio" name="platform" value="hackerrank" />
+            <input class="s-c bottom" type="radio" name="platform" value="hackerrank" />
+            <i><img width="20px" src="assets/img/flag/turkish.png" /></i>
+            <span class="label">Turky</span>
+            <span class="opt-val">Turky</span>
+          </div>
+
+          <div id="option-bg"></div>
+        </div>
+      </div>
+    </form>
+    <div class="col-2 dashboardNavbarDivIn">
+      <a class="btn btn-outline-light py-3 px-4 rounded-pill mainHomeBtnStyle dashboardNavbarButton" style="
+            background: white;
+            border: 2px solid black;
+            color: var(--main-page-color2);
+          " href="./index.html">
+        <img style="width: 25px; rotate: 180deg; margin: 0px 10px 0 -30px" src="./assets/img/payment-icon.png" alt="" />
+        Back
+      </a>
+    </div>
+
+    <div class="col-2 dashboardNavbarDivIn">
+      <p class="DraftProjectName">Draft/ <span id="project_name"></span></p>
+    </div>
+
+    <div class="col-4 dashboardNavbarDivIn">
+      <input class="SearchInput" type="text" placeholder="Search Page By Name" style="text-align: center" />
+    </div>
+
+    <div class="col-2 d-flex flex-row gap-3">
+      <a href="#" class="btn btn-outline-light px-3 rounded-pill" style="
+            color: var(--main-page-color2);
+            background-color: white;
+            border: 2px solid black;
+          ">
+        See My App
+      </a>
+
+    </div>
+  </div> -->
+
+    <div class="row">
+      <div class="side-left col-3">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 5px;
+          "
+        >
+          <img
+            class="dashboardIcons changeMouseToEdit"
+            src="./assets/img/  (1).png"
+            alt=""
+          />
+          <img class="dashboardIcons" src="./assets/img/  (2).png" alt="" />
+          <img
+            class="dashboardIcons showUploadIconDiv"
+            style="cursor: pointer"
+            src="./assets/img/appIcons/appIcon (5).png"
+            alt=""
+          />
+        </div>
+
+        <div class="screen_pragh" style="padding: 10px 30px; font-weight: bold">
+          <p>Screens</p>
+        </div>
+
+        <!-- Add Screens -->
+        <div id="screen_root" class="ScreenContainer">
+          <input
+            id="add_screen"
+            class="MuiBox-root"
+            type="button"
+            value="ADD +"
+          />
+        </div>
+      </div>
+
+      <!-- Display Screen -->
+      <div class="mainScreen">
+        <button id="toggleSidebar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="screenView col-2">
+          <div class="sideBarScreen" id="mySidebar">
+            <a class="w3-bar-item w3-button">Element 1</a>
+            <a class="w3-bar-item w3-button">Element 2</a>
+            <a class="w3-bar-item w3-button">Element 3</a>
+          </div>
+        </div>
+
+        <div
+          class="screen_footer"
+          style="
+            height: 55px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(244, 244, 244);
+          "
+        >
+          <i style="color: gray; font-size: 20px" class="fa-solid fa-house"></i>
+          <i style="color: gray; font-size: 20px" class="fa-solid fa-inbox"></i>
+          <i
+            style="color: gray; font-size: 20px"
+            class="fa-regular fa-calendar"
+          ></i>
+          <i
+            style="color: gray; font-size: 20px"
+            class="fa-regular fa-user"
+          ></i>
+        </div>
+      </div>
+      <div
+        class="editor-Area hidden"
+        id="editorArea"
+        style="border: 2px solid red"
+      ></div>
+      <div class="properties-panel col-2 hidden" id="propertiesPanel"></div>
+
+      <div class="side-right col-3">
+        <div class="sideBar">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 10px 5px;
+            "
+          >
+            <img class="dashboardIcons" src="./assets/img/  (3).png" alt="" />
+            <img class="dashboardIcons" src="./assets/img/  (4).png" alt="" />
+            <img class="dashboardIcons" src="./assets/img/  (5).png" alt="" />
+            <img class="dashboardIcons" src="./assets/img/  (6).png" alt="" />
+          </div>
+
+          <div class="element">
+            <div>
+              <h3 style="margin: 10px">Containers</h3>
+              <div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-xmarks-lines"></i>
+                  <p class="container-element" draggable="true">Container</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  <p class="swiper-element" draggable="true">Swiper</p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div>
+              <h3 style="margin: 10px">Form Elements</h3>
+              <div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-spell-check"></i>
+                  <p class="filed-element" draggable="true">Filed</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-t"></i>
+                  <p class="text-element" draggable="true">Text</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-tablet-screen-button"></i>
+                  <p class="button-element" draggable="true">Button</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-toggle-on"></i>
+                  <p class="switch-element" draggable="true">Switch</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-circle-dot"></i>
+                  <p class="radio-element" draggable="true">Radio</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fas fa-sliders-h"></i>
+                  <p class="slider-element" draggable="true">Slider</p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div>
+              <h3 style="margin: 10px">Media</h3>
+              <div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-regular fa-image"></i>
+                  <p class="image-element" draggable="true">Image</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-camera"></i>
+                  <p class="camera-view-element" draggable="true">
+                    Camera View
+                  </p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-globe"></i>
+                  <p class="web-element" draggable="true">Web</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <p class="map-element" draggable="true">Map</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-icons"></i>
+                  <p class="icon-element" draggable="true">Icon</p>
+                </div>
+                <div class="dashboardIconsDivDad">
+                  <i class="fa-solid fa-film"></i>
+                  <p class="video-element" draggable="true">Video</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sectionEditElements" style="display: none; margin: 20px">
+          <div
+            style="display: flex; justify-content: space-around; margin: 10px 0"
+          >
+            <button class="btn btn-outline-dark returnWithSave">save</button>
+            <button class="btn btn-outline-dark returnWithOutSave">
+              return
+            </button>
+          </div>
+
+          <br /><br />
+
+          <div style="margin: 10px 0">
+            <div style="font-size: 30px" class="divToEditEverySection"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+    <script src="screenFooter.js"></script>
+    <!-- <script src="js/dashboard.js"></script> -->
+  </body>
+</html>
